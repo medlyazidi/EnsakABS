@@ -10,10 +10,9 @@ import android.widget.ListView;
 import ma.ac.uit.ensa.ensakabs.R;
 import ma.ac.uit.ensa.ensakabs.layouts.etudiant.adapter.CustomActuAdapter;
 import ma.ac.uit.ensa.ensakabs.layouts.etudiant.screen.etudiant.DialogBoxContesterEtudiant;
-import ma.ac.uit.ensa.ensakabs.layouts.etudiant.screen.etudiant.NavigationDrawerEtudiant;
 
 
-public class ListFiliere extends NavigationDrawerEtudiant {
+public class ListFiliere extends NavigationDrawerProf{
     ListView list;
     String[] itemname ={
             "Génie Informatique",

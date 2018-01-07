@@ -9,9 +9,6 @@ import android.support.v7.app.AlertDialog;
 
 import ma.ac.uit.ensa.ensakabs.R;
 
-/**
- * Created by ouissal on 11/24/17.
- */
 
 
     public class DialogBoxContesterEtudiant extends DialogFragment {

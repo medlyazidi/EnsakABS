@@ -1,7 +1,9 @@
 package ma.ac.uit.ensa.ensakabs.layouts.etudiant.screen.prof;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
@@ -10,6 +12,7 @@ import android.widget.ListView;
 import ma.ac.uit.ensa.ensakabs.R;
 import ma.ac.uit.ensa.ensakabs.layouts.etudiant.adapter.CustomActuAdapter;
 import ma.ac.uit.ensa.ensakabs.layouts.etudiant.screen.etudiant.DialogBoxContesterEtudiant;
+import ma.ac.uit.ensa.ensakabs.layouts.etudiant.screen.etudiant.SignIn;
 
 
 public class ActualiteProf extends NavigationDrawerProf {
@@ -87,9 +90,13 @@ public class ActualiteProf extends NavigationDrawerProf {
         });
     }
 
-
-
-
-
-
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK){
+            Intent intent = new Intent(getApplicationContext(), SignIn.class);
+            startActivity(intent);
+            finish();
+        }
+        return super.onKeyDown(keyCode, event);
+    }
 }

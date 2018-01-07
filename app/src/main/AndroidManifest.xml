@@ -3,6 +3,7 @@
     package="ma.ac.uit.ensa.ensakabs">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -40,6 +41,7 @@
         <activity android:name=".layouts.etudiant.screen.prof.ListFiliere" />
         <activity android:name=".layouts.etudiant.screen.prof.ListSectionCP" />
         <activity android:name=".layouts.etudiant.screen.prof.ActualiteProf" />
+        <activity android:name=".layouts.etudiant.screen.prof.HistoriqueProf" />
     </application>
 
 </manifest>

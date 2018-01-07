@@ -2,21 +2,14 @@ package ma.ac.uit.ensa.ensakabs.layouts.etudiant.screen.etudiant;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Toast;
-
-import java.util.ArrayList;
 
 import ma.ac.uit.ensa.ensakabs.R;
-import ma.ac.uit.ensa.ensakabs.layouts.etudiant.adapter.ActualiteAdapter;
-import ma.ac.uit.ensa.ensakabs.layouts.etudiant.adapter.ActualiteObjects;
 import ma.ac.uit.ensa.ensakabs.layouts.etudiant.adapter.CustomActuAdapter;
 
 public class ActualitesEtudiant extends NavigationDrawerEtudiant {
@@ -94,7 +87,15 @@ public class ActualitesEtudiant extends NavigationDrawerEtudiant {
         });
     }
 
-
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK){
+            Intent intent = new Intent(getApplicationContext(), SignIn.class);
+            startActivity(intent);
+            finish();
+        }
+        return super.onKeyDown(keyCode, event);
+    }
 
 
 

@@ -10,14 +10,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 import ma.ac.uit.ensa.ensakabs.R;
-import ma.ac.uit.ensa.ensakabs.layouts.etudiant.screen.etudiant.HistoriqueEtudiant;
 
 public class NavigationDrawerEtudiant extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     protected DrawerLayout drawer;
+    TextView nomPrenom;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //getSupportActionBar().hide();
@@ -43,6 +45,8 @@ public class NavigationDrawerEtudiant extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        View header=navigationView.getHeaderView(0);
+        nomPrenom = (TextView)header.findViewById(R.id.nom_prenom_user);
     }
 
     @Override
@@ -97,7 +101,9 @@ public class NavigationDrawerEtudiant extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.nav_logout) {
-            //TODO
+            Intent intent = new Intent(getApplicationContext(), SignIn.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
 
         } else if (id == R.id.nav_apropos) {
             //TODO

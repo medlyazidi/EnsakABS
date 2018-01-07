@@ -16,9 +16,6 @@ import ma.ac.uit.ensa.ensakabs.R;
 
 public class PlanifierRattProf extends NavigationDrawerProf {
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +56,8 @@ public class PlanifierRattProf extends NavigationDrawerProf {
         FragmentTransaction t = getSupportFragmentManager().beginTransaction();
         t.replace(R.id.historiqueEtudiantC, caldroidFragment);
         t.commit();
+
+
 
     }
 

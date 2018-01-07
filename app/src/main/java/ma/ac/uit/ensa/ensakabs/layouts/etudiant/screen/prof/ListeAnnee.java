@@ -47,6 +47,7 @@ public class ListeAnnee extends NavigationDrawerProf{
         View contentView = inflater.inflate(R.layout.activity_actualites_etudiant, null, false);
         drawer.addView(contentView, 0);
 
+        nomPrenom.setText("Simo King");
 
         CustomActuAdapter adapter=new CustomActuAdapter(this, itemname, imgid, itemdesc);
         list=(ListView)findViewById(R.id.listactu);
