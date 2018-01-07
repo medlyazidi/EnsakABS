@@ -35,4 +35,15 @@
     <string name="navigation_prof_faireAppel">Faire l\'appel</string>
     <string name="navigation_prof_rattrapage">Planifier un rattrapage</string>
 
+    <string-array name="name">
+        <item>iliass elamrani</item>
+        <item>Mehdi lamrini</item>
+        <item>Mohamed lyazidi</item>
+        <item>Hamza kania</item>
+        <item>Hamid lbrntek</item>
+        <item>oussama bouzoubaa</item>
+        <item>yousra mouhou</item>
+
+    </string-array>
+
 </resources>

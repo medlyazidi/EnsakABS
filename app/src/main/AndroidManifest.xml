@@ -42,6 +42,7 @@
         <activity android:name=".layouts.etudiant.screen.prof.ListSectionCP" />
         <activity android:name=".layouts.etudiant.screen.prof.ActualiteProf" />
         <activity android:name=".layouts.etudiant.screen.prof.HistoriqueProf" />
+        <activity android:name=".layouts.etudiant.screen.prof.ListeEtudiant" />
     </application>
 
 </manifest>

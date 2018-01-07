@@ -64,11 +64,11 @@ public class SignIn extends AppCompatActivity {
                 } catch (Exception e) {
                     Log.e("MYAPP", "unexpected JSON exception", e);
                 }
-
+/*
                 Intent intent;
-                intent = new Intent(getApplicationContext(), ListeAnnee.class);
+                intent = new Intent(getApplicationContext(), ListeEtudiant.class);
                 startActivity(intent);
-                
+*/
 
             }
         });
