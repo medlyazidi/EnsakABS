@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/activityAdapterLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/text_actualite_etudiant"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.84"
+        android:padding="20dp"
+        android:text="@string/justif_absence_refused"
+        android:layout_marginLeft="20dp"
+        tools:text="Complex items list" />
+
+
+    <ImageView
+
+        android:id="@+id/icone_actualite_etudiant"
+        android:layout_width="57dp"
+
+        android:layout_height="41dp"
+        android:layout_weight="0.15"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/absencenonj" />
+</LinearLayout>

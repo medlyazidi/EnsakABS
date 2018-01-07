@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_actualites"
+            android:icon="@drawable/ic_chrome_reader_mode_black_24dp"
+            android:title="@string/navigation_etudiant_actualites" />
+        <item
+            android:id="@+id/nav_historique"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="@string/navigation_etudiant_historique" />
+        <item
+            android:id="@+id/nav_abs_aj"
+            android:icon="@drawable/ic_assignment_late_black_24dp"
+            android:title="@string/navigation_etudiant_absenseAJ" />
+
+    </group>
+
+    <item android:title="Autre">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_cancel_black_24dp"
+                android:title="@string/navigation_etudiant_logout" />
+            <item
+                android:id="@+id/nav_apropos"
+                android:icon="@drawable/ic_help_outline_black_24dp"
+                android:title="@string/navigation_etudiant_about" />
+        </menu>
+    </item>
+
+</menu>

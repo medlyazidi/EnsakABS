@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- LOGIN PAGE -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGrayForBG">#efefef</color>
+    <color name="colorGrayForBGTint">#92a0a3</color>
+    <color name="colorWhiteForText">#ffffff</color>
+    <color name="mainThemeColorForButtons">#2d8c9b</color>
+    <color name="calendarYellowColor">#f39c12</color>
+</resources>

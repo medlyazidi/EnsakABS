@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ma.ac.uit.ensa.ensakabs.layouts.etudiant.screen.etudiant.HistoriqueEtudiant"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <CalendarView
+        android:id="@+id/historiqueEtudiantC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/downloadButton"
+        android:layout_width="63dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ic_file_download_black_24dp" />
+
+    <ImageView
+        android:id="@+id/blueCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historiqueEtudiantC"
+        app:srcCompat="@drawable/blue_circle" />
+
+    <ImageView
+        android:id="@+id/yellowCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blueCircle"
+        app:srcCompat="@drawable/f39c12_circle" />
+
+    <ImageView
+        android:id="@+id/pinkCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yellowCircle"
+        app:srcCompat="@drawable/pink_circle" />
+
+    <TextView
+        android:id="@+id/AbsenceJ"
+        android:layout_width="282dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/AbsenceJ"
+        app:layout_constraintStart_toEndOf="@+id/blueCircle"
+        app:layout_constraintTop_toBottomOf="@+id/historiqueEtudiantC" />
+
+    <TextView
+        android:id="@+id/AbsenceEnAtt"
+        android:layout_width="281dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/AbsenceEnAtt"
+        app:layout_constraintStart_toEndOf="@+id/yellowCircle"
+        app:layout_constraintTop_toBottomOf="@+id/AbsenceJ" />
+
+    <TextView
+        android:id="@+id/AbsenceNonJ"
+        android:layout_width="286dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/AbsenceNonJ"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pinkCircle"
+        app:layout_constraintTop_toBottomOf="@+id/AbsenceEnAtt" />
+
+</android.support.constraint.ConstraintLayout>

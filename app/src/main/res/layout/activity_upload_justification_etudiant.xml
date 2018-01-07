@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ma.ac.uit.ensa.ensakabs.layouts.etudiant.screen.etudiant.UploadJustificationEtudiant">
+
+    <EditText
+        android:id="@+id/textBoxJustif"
+        android:layout_width="287dp"
+        android:layout_height="146dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/attachJustifButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/sendJustButton"
+        android:layout_width="292dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:background="@color/mainThemeColorForButtons"
+        android:text="@string/envoyer"
+        android:textColor="@color/colorWhiteForText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/attachJustifButton"
+        android:layout_width="58dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="52dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/sendJustButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_attach_file_black_24dp"
+        android:layout_marginRight="60dp" />
+
+    <TextView
+        android:id="@+id/justifText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/roboto_mono_bold"
+        android:text="@string/Justification_de_date"
+        android:textAllCaps="true"
+        android:textColor="@color/caldroid_333"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/textBoxJustif"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+</android.support.constraint.ConstraintLayout>

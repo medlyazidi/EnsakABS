@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ma.ac.uit.ensa.ensakabs">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".layouts.etudiant.screen.etudiant.SignIn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".layouts.etudiant.screen.etudiant.NavigationDrawerEtudiant"
+            android:label="@string/title_activity_navigation_drawer_etudiant"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".layouts.etudiant.screen.etudiant.ActualitesEtudiant" />
+        <activity android:name=".layouts.etudiant.screen.etudiant.HistoriqueEtudiant" />
+        <activity android:name=".layouts.etudiant.screen.etudiant.AbsenceAJustifEtudiant" />
+        <activity android:name=".layouts.etudiant.screen.etudiant.UploadJustificationEtudiant" />
+        <activity
+            android:name=".layouts.etudiant.screen.prof.NavigationDrawerProf"
+            android:label="@string/title_activity_navigation_drawer_prof"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".layouts.etudiant.screen.prof.PlanifierRattProf"></activity>
+        <activity android:name=".layouts.etudiant.screen.prof.ListeAnnee" />
+        <activity android:name=".layouts.etudiant.screen.prof.ListFiliere" />
+        <activity android:name=".layouts.etudiant.screen.prof.ListSectionCP" />
+        <activity android:name=".layouts.etudiant.screen.prof.ActualiteProf" />
+    </application>
+
+</manifest>

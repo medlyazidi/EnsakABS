@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ma.ac.uit.ensa.ensakabs.layouts.etudiant.screen.etudiant.SignIn">
+
+
+    <RelativeLayout
+
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorGrayForBG"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextUsername"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/editTextUsername"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="68dp"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:fontFamily="@font/allerta_stencil"
+            android:text="@string/ENSAK"
+            android:textSize="50dp" />
+
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewAppName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="81dp"
+            android:backgroundTint="@color/colorGrayForBGTint"
+            android:drawableLeft="@drawable/user2"
+            android:ems="10"
+            android:hint="@string/usernameFieldHint"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextUsername"
+            android:layout_alignStart="@+id/editTextUsername"
+            android:layout_below="@+id/editTextUsername"
+            android:layout_marginTop="17dp"
+            android:backgroundTint="@color/colorGrayForBGTint"
+            android:drawableLeft="@drawable/pass2"
+            android:ems="10"
+            android:hint="@string/passwordFieldHint"
+            android:inputType="textPassword" />
+
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/editTextPassword"
+            android:layout_alignStart="@+id/editTextPassword"
+            android:layout_below="@+id/editTextPassword"
+            android:layout_marginTop="55dp"
+            android:background="@color/mainThemeColorForButtons"
+            android:textSize="20dp"
+            android:soundEffectsEnabled="true"
+
+            android:text="@string/loginButton"
+            android:textColor="@color/colorWhiteForText" />
+
+        <TextView
+            android:id="@+id/textViewAppNamePart2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewAppName"
+            android:layout_alignBottom="@+id/textViewAppName"
+            android:layout_toEndOf="@+id/textViewAppName"
+            android:layout_toRightOf="@+id/textViewAppName"
+            android:fontFamily="@font/marko_one"
+            android:text="@string/ABS"
+            android:textColor="@color/mainThemeColorForButtons"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/loginButton"
+            android:layout_alignStart="@+id/loginButton"
+            android:layout_below="@+id/loginButton"
+            android:layout_marginTop="17dp"
+            android:text="Mot de passe oublié?" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
